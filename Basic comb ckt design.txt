@@ -1,0 +1,4 @@
+module majority_3numbers(output OUT,input A,input B,input C);
+  assign OUT=((A&&B)||(B&&C)||(C&&A));
+endmodule
+  

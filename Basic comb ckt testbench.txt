@@ -1,0 +1,17 @@
+
+module testbench();
+reg a,b,c;
+wire out;
+majority_3numbers M1(out,a,b,c);
+initial
+  begin
+    for(int i=0;i<8;i=i+1)
+      begin
+        {a,b,c}=i;
+      end
+  end
+initial
+  begin
+    $monitor(a,b,c,out);
+  end
+endmodule
